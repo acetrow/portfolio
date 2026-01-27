@@ -28,12 +28,12 @@ export default async function ProjectDetailPage({
   }
 
   return (
-    <main className="min-h-screen bg-gray-50 dark:bg-gray-900">
+    <main className="min-h-screen bg-gray-900">
       <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
         {/* Back Button */}
         <Link
           href="/projects"
-          className="mb-8 inline-flex items-center text-sm font-medium text-gray-600 transition-colors hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400"
+          className="mb-8 inline-flex items-center text-sm font-medium text-gray-400 transition-colors hover:text-blue-400"
         >
           <svg
             className="mr-2 h-4 w-4"
@@ -52,7 +52,7 @@ export default async function ProjectDetailPage({
         </Link>
 
         {/* Project Image/Video */}
-        <div className="relative mb-8 h-64 w-full overflow-hidden rounded-lg bg-gray-200 shadow-lg sm:h-96 dark:bg-gray-700">
+        <div className="relative mb-8 h-64 w-full overflow-hidden rounded-lg bg-gray-700 shadow-lg sm:h-96">
           {project.image.endsWith('.mp4') ? (
             <video
               src={project.image}
@@ -75,19 +75,19 @@ export default async function ProjectDetailPage({
         </div>
 
         {/* Project Content */}
-        <div className="rounded-lg bg-white p-8 shadow-sm dark:bg-gray-800">
+        <div className="rounded-lg bg-gray-800 p-8 shadow-sm">
           <div className="mb-6">
-            <h1 className="mb-4 text-4xl font-bold text-gray-900 dark:text-white">
+            <h1 className="mb-4 text-4xl font-bold text-white">
               {project.title}
             </h1>
-            <div className="text-lg leading-relaxed text-gray-600 dark:text-gray-300 whitespace-pre-line">
+            <div className="text-lg leading-relaxed text-gray-300 whitespace-pre-line">
               {project.longDescription}
             </div>
           </div>
 
           {/* Technologies */}
           <div className="mb-8">
-            <h2 className="mb-4 text-xl font-semibold text-gray-900 dark:text-white">
+            <h2 className="mb-4 text-xl font-semibold text-white">
               Technologies Used
             </h2>
             <div className="flex flex-wrap gap-3">
@@ -109,7 +109,7 @@ export default async function ProjectDetailPage({
                 href={project.githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center rounded-lg bg-gray-900 px-6 py-3 text-base font-semibold text-white transition-all hover:bg-gray-800 dark:bg-gray-700 dark:hover:bg-gray-600"
+                className="inline-flex items-center rounded-lg bg-gray-700 px-6 py-3 text-base font-semibold text-white transition-all hover:bg-gray-600"
               >
                 <svg
                   className="mr-2 h-5 w-5"

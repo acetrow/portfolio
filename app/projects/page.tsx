@@ -36,13 +36,13 @@ export default function ProjectsPage() {
   }, [projects, selectedTech]);
 
   return (
-    <main className="min-h-screen bg-gray-50 dark:bg-gray-900">
+    <main className="min-h-screen bg-gray-900">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
         <div className="mb-8 text-center">
-          <h1 className="mb-4 text-4xl font-bold text-gray-900 dark:text-white sm:text-5xl">
+          <h1 className="mb-4 text-4xl font-bold text-white sm:text-5xl">
             My Projects
           </h1>
-          <p className="text-lg text-gray-600 dark:text-gray-300">
+          <p className="text-lg text-gray-300">
             A collection of projects showcasing my work with modern technologies
             <br />
             and real-world development practices.
@@ -54,7 +54,7 @@ export default function ProjectsPage() {
           <div className="mb-4 sm:mb-0">
             <label
               htmlFor="tech-filter"
-              className="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300"
+              className="mb-2 block text-sm font-medium text-gray-300"
             >
               Filter by Technology:
             </label>
@@ -62,7 +62,7 @@ export default function ProjectsPage() {
               id="tech-filter"
               value={selectedTech}
               onChange={(e) => setSelectedTech(e.target.value)}
-              className="rounded-lg border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm transition-colors focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300"
+              className="rounded-lg border border-gray-600 bg-gray-800 px-4 py-2 text-sm font-medium text-gray-300 shadow-sm transition-colors focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               <option value="all">All Technologies</option>
               {allTechnologies.map((tech) => (
@@ -72,7 +72,7 @@ export default function ProjectsPage() {
               ))}
             </select>
           </div>
-          <div className="text-sm text-gray-600 dark:text-gray-400">
+          <div className="text-sm text-gray-400">
             Showing {filteredProjects.length} project
             {filteredProjects.length !== 1 ? 's' : ''}
           </div>
@@ -87,7 +87,7 @@ export default function ProjectsPage() {
           </div>
         ) : (
           <div className="py-12 text-center">
-            <p className="text-lg text-gray-600 dark:text-gray-400">
+            <p className="text-lg text-gray-400">
               No projects found with the selected technology.
             </p>
           </div>

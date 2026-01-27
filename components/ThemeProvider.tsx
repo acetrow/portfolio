@@ -18,10 +18,13 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const updateTheme = (newTheme: Theme) => {
     if (typeof document !== 'undefined') {
       const root = document.documentElement;
+      const body = document.body;
       if (newTheme === 'dark') {
         root.classList.add('dark');
+        body.classList.add('dark');
       } else {
         root.classList.remove('dark');
+        body.classList.remove('dark');
       }
     }
   };

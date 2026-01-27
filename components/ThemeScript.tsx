@@ -7,8 +7,10 @@ export default function ThemeScript() {
         const initialTheme = theme || systemTheme;
         if (initialTheme === 'dark') {
           document.documentElement.classList.add('dark');
+          document.body.classList.add('dark');
         } else {
           document.documentElement.classList.remove('dark');
+          document.body.classList.remove('dark');
         }
       } catch (e) {}
     })();

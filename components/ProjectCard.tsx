@@ -13,9 +13,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   const isVideo = project.image.endsWith('.mp4');
 
   return (
-    <div className="group overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:shadow-lg hover:border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:hover:border-gray-600">
+    <div className="group overflow-hidden rounded-lg border border-gray-700 bg-gray-800 shadow-sm transition-all duration-300 hover:shadow-lg hover:border-gray-600">
       <Link href={`/projects/${project.slug}`}>
-        <div className="relative h-48 w-full overflow-hidden bg-gray-100 dark:bg-gray-700">
+        <div className="relative h-48 w-full overflow-hidden bg-gray-700">
           {isVideo ? (
             <video
               src={project.image}
@@ -41,10 +41,10 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           )}
         </div>
         <div className="p-6">
-          <h3 className="mb-2 text-xl font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+          <h3 className="mb-2 text-xl font-semibold text-white group-hover:text-blue-400 transition-colors">
             {project.title}
           </h3>
-          <p className="mb-4 text-sm text-gray-600 dark:text-gray-300 overflow-hidden text-ellipsis" style={{
+          <p className="mb-4 text-sm text-gray-300 overflow-hidden text-ellipsis" style={{
             display: '-webkit-box',
             WebkitLineClamp: 2,
             WebkitBoxOrient: 'vertical',
@@ -61,7 +61,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               </span>
             ))}
             {project.technologies.length > 3 && (
-              <span className="rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-700 dark:bg-gray-700 dark:text-gray-300">
+              <span className="rounded-full bg-gray-700 px-3 py-1 text-xs font-medium text-gray-300">
                 +{project.technologies.length - 3}
               </span>
             )}
@@ -75,7 +75,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             target="_blank"
             rel="noopener noreferrer"
             onClick={(e) => e.stopPropagation()}
-            className="flex w-full items-center justify-center gap-2 rounded-lg bg-gray-900 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-gray-800 dark:bg-gray-700 dark:hover:bg-gray-600"
+            className="flex w-full items-center justify-center gap-2 rounded-lg bg-gray-700 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-gray-600"
           >
             <svg
               className="h-4 w-4"

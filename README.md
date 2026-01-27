@@ -1,11 +1,11 @@
 # Portfolio Website
 
-A modern, responsive portfolio website built with Next.js 16, featuring a clean design, dark mode support, and a dynamic project showcase with filtering capabilities.
+A modern, responsive portfolio website built with Next.js 16, featuring a dark theme design and a dynamic project showcase with filtering capabilities.
 
 ## Features
 
-- 🎨 **Modern UI/UX**: Clean, responsive design with gradient accents and smooth transitions
-- 🌙 **Dark Mode**: Full dark mode support with system preference detection
+- 🎨 **Modern UI/UX**: Clean, dark theme design with gradient accents and smooth transitions
+- 🌙 **Dark Theme**: Consistent dark color scheme throughout the site
 - 📱 **Responsive Design**: Optimized for all screen sizes
 - 🔍 **Project Filtering**: Filter projects by technology stack
 - 📄 **Dynamic Project Pages**: Individual detail pages for each project
@@ -33,10 +33,7 @@ portfolio/
 │   └── globals.css        # Global styles
 ├── components/            # React components
 │   ├── Navigation.tsx     # Main navigation bar
-│   ├── ProjectCard.tsx    # Project card component
-│   ├── ThemeProvider.tsx  # Dark mode provider
-│   ├── ThemeScript.tsx    # Theme initialization script
-│   └── ThemeToggle.tsx    # Dark mode toggle button
+│   └── ProjectCard.tsx    # Project card component
 ├── data/                  # Data files
 │   └── projects.json      # Project data
 ├── types/                 # TypeScript types
@@ -148,10 +145,6 @@ Edit `app/page.tsx` to update:
 The project uses Tailwind CSS. Customize colors, spacing, and other design tokens in:
 - `app/globals.css` - Global styles and CSS variables
 - Component files - Tailwind classes
-
-### Theme
-
-Dark mode is implemented using a custom theme provider. The theme preference is stored in localStorage and respects system preferences.
 
 ## License
 
