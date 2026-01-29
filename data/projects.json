@@ -52,6 +52,16 @@
     "featured": true
   },
   {
+    "slug": "presentation-editor",
+    "title": "Java Swing Presentation Editor",
+    "description": "A desktop presentation editor built in Java that replicates core PowerPoint features, including multi-slide management, rich text formatting, image handling, drawing tools, and full-screen presentation mode.",
+    "longDescription": "This project is a fully featured presentation editor developed using Java Swing, designed to mimic the functionality of PowerPoint while being built entirely from scratch. Users can create and manage multi-slide presentations, navigate slides via a thumbnail panel, and add rich content such as formatted text, images, and drawings.\n\nKey Features:\n\n- Multi-slide management with thumbnail navigation\n- Rich text formatting capabilities\n- Image handling and insertion\n- Drawing tools for custom graphics\n- Full-screen presentation mode with dynamic scaling\n\nEach slide maintains its own independent state, including:\n\n- Text boxes\n- Images\n- Drawings\n- Background colours\n- Speaker notes\n\nAll presentation data is serialized to and restored from a custom JSON format, ensuring full persistence across sessions and backward compatibility with older file formats.\n\nThe application uses an event-driven architecture with reusable draggable components, custom rendering using Graphics2D, and an MVC-like separation between UI, slide state, and presentation logic. A full-screen presentation mode scales slides dynamically to fit the display, providing a realistic slide-show experience.\n\nThis project demonstrates advanced desktop GUI development, clean object-oriented design, custom state management, and real-world editor-style functionality beyond basic coursework.",
+    "image": "/images/presentation-editor.jpg",
+    "technologies": ["Java", "Java Swing", "Java2D", "JSON"],
+    "githubUrl": "https://github.com/zulhanifzairudin/presentation-software",
+    "featured": true
+  },
+  {
     "slug": "task-manager",
     "title": "Task Manager",
     "description": "A lightweight task management web app built with React and Vite, featuring task CRUD operations.",
