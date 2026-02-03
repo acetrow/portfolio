@@ -28,25 +28,14 @@ export default function AboutPage() {
         {/* Header */}
         <div className="mb-12 text-center">
           <h1 className="mb-4 text-4xl font-bold text-white sm:text-5xl">
-            About Me
+            Muhammad Zulhanif Zairudin
           </h1>
-          <p className="text-lg text-gray-300">
-            Computer Science student passionate about building real-world applications
-          </p>
         </div>
 
         {/* Contact Information */}
         <div className="mb-12 rounded-lg bg-gray-800 p-8 shadow-sm">
           <h2 className="mb-6 text-2xl font-semibold text-white">Contact Information</h2>
           <div className="space-y-4 text-gray-300">
-            <div className="flex items-center gap-3">
-              <svg className="h-5 w-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-              </svg>
-              <a href="mailto:muhammadzulhanif0802@gmail.com" className="hover:text-blue-400 transition-colors">
-                muhammadzulhanif0802@gmail.com
-              </a>
-            </div>
             <div className="flex items-center gap-3">
               <svg className="h-5 w-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -60,7 +49,9 @@ export default function AboutPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
-              <span>Penang, Malaysia</span>
+              <a href="mailto:muhammadzulhanif0802@gmail.com" className="hover:text-blue-400 transition-colors">
+                muhammadzulhanif0802@gmail.com
+              </a>
             </div>
           </div>
 
@@ -78,6 +69,17 @@ export default function AboutPage() {
               LinkedIn
             </a>
             <a
+              href="https://portfolio-blue-iota-85.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-lg bg-purple-600 px-4 py-2 text-sm font-semibold text-white transition-all hover:bg-purple-700"
+            >
+              <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+              </svg>
+              Portfolio
+            </a>
+            <a
               href="https://github.com/zulhanifzairudin"
               target="_blank"
               rel="noopener noreferrer"
@@ -91,85 +93,92 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* Education */}
+        {/* Academic */}
         <div className="mb-12 rounded-lg bg-gray-800 p-8 shadow-sm">
-          <h2 className="mb-6 text-2xl font-semibold text-white">Education</h2>
+          <h2 className="mb-6 text-2xl font-semibold text-white">Academic</h2>
           <div className="space-y-8">
             <div>
               <div className="mb-2 flex flex-col sm:flex-row sm:items-center sm:justify-between">
-                <h3 className="text-xl font-semibold text-white">Lancaster University</h3>
-                <span className="text-sm text-gray-400">Oct 2022 - July 2025</span>
+                <h3 className="text-xl font-semibold text-white">Bachelor of Science in Computer Science</h3>
+                <span className="text-sm text-gray-400">October 2022 - July 2025</span>
               </div>
-              <p className="mb-3 text-gray-300">BSc (Hons) Computer Science</p>
-              <ul className="ml-6 list-disc space-y-1 text-gray-400">
-                <li>Relevant modules: Software Development, Databases, Computer Networks, Digital Systems, Software Design, Operating System, Distributed System, Artificial Intelligence, Security and Risk, Media Coding & Processing</li>
+              <p className="mb-3 text-gray-300">Lancaster University, United Kingdom</p>
+              <p className="mb-3 text-sm text-gray-400">Relevant Modules: Software Development, Software Design, Databases, Operating Systems, Distributed Systems, Computer Networks, Artificial Intelligence, Security and Risk</p>
+            </div>
+
+            <div>
+              <div className="mb-2 flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                <h3 className="text-xl font-semibold text-white">International Baccalaureate Diploma Program (IBDP)</h3>
+                <span className="text-sm text-gray-400">September 2020 - May 2022</span>
+              </div>
+              <p className="mb-3 text-gray-300">MARA College Banting</p>
+              <p className="mb-3 text-sm text-gray-400"></p>
+            </div>
+          </div>
+        </div>
+
+
+        {/* Work Experience */}
+        <div className="mb-12 rounded-lg bg-gray-800 p-8 shadow-sm">
+          <h2 className="mb-6 text-2xl font-semibold text-white">Work Experience</h2>
+          <div className="space-y-8">
+            <div>
+              <div className="mb-2 flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                <h3 className="text-xl font-semibold text-white">Technology Consultant Intern</h3>
+                <span className="text-sm text-gray-400">September 2025 - Present</span>
+              </div>
+              <p className="mb-3 text-gray-300">Ernst and Young, Kuala Lumpur, Malaysia</p>
+              <ul className="ml-6 list-disc space-y-2 text-gray-400">
+                <li>Contributed to the implementation and deployment of SAP-based e-invoicing systems for enterprise clients, supporting large-scale digital transformation of finance and invoice workflows.</li>
+                <li>Designed and executed end-to-end system testing and user acceptance testing (UAT), ensuring functional correctness, data integrity, and regulatory compliance of SAP e-invoicing platforms.</li>
+                <li>Built and maintained large-scale test datasets (1,000+ records) to simulate real-world invoicing scenarios (invoices, debit/credit notes and memos), validating edge cases and complex workflow behavior.</li>
               </ul>
             </div>
 
             <div>
               <div className="mb-2 flex flex-col sm:flex-row sm:items-center sm:justify-between">
-                <h3 className="text-xl font-semibold text-white">MARA Banting College</h3>
-                <span className="text-sm text-gray-400">Sep 2020 - May 2022</span>
+                <h3 className="text-xl font-semibold text-white">Web Developer</h3>
+                <span className="text-sm text-gray-400">July 2023 - September 2023</span>
               </div>
-              <p className="mb-3 text-gray-300">International Baccalaureate, 35 points</p>
-              <ul className="ml-6 list-disc space-y-1 text-gray-400">
-                <li>Relevant modules: Mathematics AA HL, Physics HL, English HL, ITGS SL, Malay SL, Chemistry SL</li>
+              <p className="mb-3 text-gray-300">Freelance, Remote</p>
+              <ul className="ml-6 list-disc space-y-2 text-gray-400">
+                <li>Delivered a production-ready educational website for a primary school teacher, improving digital delivery of lesson content and increasing student engagement through interactive learning experiences.</li>
+                <li>Translated user requirements into clear UI flows and interactive features, iterating with stakeholder feedback to refine usability and content structure.</li>
+                <li>Engineered responsive, mobile-friendly interfaces using HTML, CSS, and JavaScript, ensuring cross-browser compatibility and smooth performance.</li>
+                <li>Took ownership of the full development lifecycle (requirements gathering, design, development, testing, deployment), meeting tight deadlines and maintaining high code quality.</li>
               </ul>
             </div>
 
             <div>
               <div className="mb-2 flex flex-col sm:flex-row sm:items-center sm:justify-between">
-                <h3 className="text-xl font-semibold text-white">SMKA Al-Irshad</h3>
-                <span className="text-sm text-gray-400">Jan 2015 - Nov 2019</span>
+                <h3 className="text-xl font-semibold text-white">IT Support & Marketing Intern</h3>
+                <span className="text-sm text-gray-400">July 2023 - September 2023</span>
               </div>
-              <p className="mb-3 text-gray-300">High School</p>
-              <ul className="ml-6 list-disc space-y-1 text-gray-400">
-                <li>Malaysian Certificate of Education (SPM) Best Achiever Award, (10A)</li>
+              <p className="mb-3 text-gray-300">Talita Laptop, Penang, Malaysia</p>
+              <ul className="ml-6 list-disc space-y-2 text-gray-400">
+                <li>Provided technical support and hardware upgrades for 50+ laptops, troubleshooting issues and improving system performance for customers.</li>
+                <li>Designed promotional materials and engaged with 100+ customers, boosting product awareness and user experience.</li>
               </ul>
             </div>
           </div>
         </div>
 
-        {/* Professional Experience */}
+        {/* Extracurricular Activities */}
         <div className="mb-12 rounded-lg bg-gray-800 p-8 shadow-sm">
-          <h2 className="mb-6 text-2xl font-semibold text-white">Professional Experience</h2>
-          <div className="space-y-8">
+          <h2 className="mb-6 text-2xl font-semibold text-white">Extracurricular Activities</h2>
+          <div className="space-y-6">
             <div>
-              <div className="mb-2 flex flex-col sm:flex-row sm:items-center sm:justify-between">
-                <h3 className="text-xl font-semibold text-white">Ernst & Young</h3>
-                <span className="text-sm text-gray-400">July 2024 – Aug 2024</span>
-              </div>
-              <p className="mb-3 text-gray-300">Technology Consultant Intern</p>
-              <ul className="ml-6 list-disc space-y-2 text-gray-400">
-                <li>Assisted in deploying an e-invoicing solution using SAP tools, improving efficiency across invoice workflows.</li>
-                <li>Conducted end-to-end testing of SAP-based e-invoice software, identifying and resolving 15+ data issues to ensure system compliance.</li>
-                <li>Gained deep insights into invoice processes, including digitization and compliance.</li>
-                <li>Demonstrated problem-solving skills and collaboration in a team environment to meet project objectives.</li>
+              <h3 className="mb-2 text-lg font-semibold text-white">Google Kick Start 2020</h3>
+              <p className="mb-2 text-sm text-gray-400">2020</p>
+              <ul className="ml-6 list-disc space-y-1 text-gray-400">
+                <li>Participated in Google Kick Start 2020 coding competition and managed to get into round E.</li>
               </ul>
             </div>
-
             <div>
-              <div className="mb-2 flex flex-col sm:flex-row sm:items-center sm:justify-between">
-                <h3 className="text-xl font-semibold text-white">TALITA LAPTOP</h3>
-                <span className="text-sm text-gray-400">July 2023 - Sep 2023</span>
-              </div>
-              <p className="mb-3 text-gray-300">IT Support and Marketing Intern</p>
-              <ul className="ml-6 list-disc space-y-2 text-gray-400">
-                <li>Repaired and upgraded laptops to enhance performance and user experience.</li>
-                <li>Designed promotional materials such as posters and catalogues to market shop products effectively.</li>
-                <li>Interacted with customers, providing excellent service and offering personalized product suggestions to meet their individual needs</li>
-              </ul>
-            </div>
-
-            <div>
-              <div className="mb-2 flex flex-col sm:flex-row sm:items-center sm:justify-between">
-                <h3 className="text-xl font-semibold text-white">Freelance Web Developer</h3>
-                <span className="text-sm text-gray-400">July 2023 – Aug 2023</span>
-              </div>
-              <ul className="ml-6 list-disc space-y-2 text-gray-400">
-                <li>Delivered an educational website for a primary school teacher, featuring interactive lessons on healthy habits.</li>
-                <li>Collaborated closely with the teacher to design and implement engaging features.</li>
-                <li>Successfully met project deadlines and ensured timely delivery of the website.</li>
+              <h3 className="mb-2 text-lg font-semibold text-white">Model United Nations Conference 2020</h3>
+              <p className="mb-2 text-sm text-gray-400">2020</p>
+              <ul className="ml-6 list-disc space-y-1 text-gray-400">
+                <li>Represented Mexico in the SOCHUM committee, collaborating with global delegates on social and humanitarian issues.</li>
               </ul>
             </div>
           </div>
@@ -190,9 +199,9 @@ export default function AboutPage() {
               </div>
             </div>
             <div>
-              <h3 className="mb-3 text-lg font-semibold text-white">Frameworks & Libraries</h3>
+              <h3 className="mb-3 text-lg font-semibold text-white">Frontend & Web Development</h3>
               <div className="flex flex-wrap gap-2">
-                {['React', 'Next.js', 'ASP.NET Core', 'Unity'].map((skill) => (
+                {['React', 'Next.js', 'Tailwind CSS', 'HTML', 'CSS', 'Webflow', 'Lottie-web'].map((skill) => (
                   <span key={skill} className="rounded-lg bg-gray-700 px-3 py-1 text-sm text-gray-300">
                     {skill}
                   </span>
@@ -200,9 +209,19 @@ export default function AboutPage() {
               </div>
             </div>
             <div>
-              <h3 className="mb-3 text-lg font-semibold text-white">Web & Backend Technologies</h3>
+              <h3 className="mb-3 text-lg font-semibold text-white">Backend & Full-Stack Development</h3>
               <div className="flex flex-wrap gap-2">
-                {['RESTful APIs', 'HTML5', 'CSS3', 'Tailwind CSS', 'MySQL', 'SQL Server'].map((skill) => (
+                {['ASP.NET Core', 'FastAPI', 'PHP', 'MySQL', 'MongoDB'].map((skill) => (
+                  <span key={skill} className="rounded-lg bg-gray-700 px-3 py-1 text-sm text-gray-300">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h3 className="mb-3 text-lg font-semibold text-white">Game & GUI Development</h3>
+              <div className="flex flex-wrap gap-2">
+                {['Unity', 'Java Swing', 'Java2D'].map((skill) => (
                   <span key={skill} className="rounded-lg bg-gray-700 px-3 py-1 text-sm text-gray-300">
                     {skill}
                   </span>
@@ -212,7 +231,7 @@ export default function AboutPage() {
             <div>
               <h3 className="mb-3 text-lg font-semibold text-white">Tools & Platforms</h3>
               <div className="flex flex-wrap gap-2">
-                {['Git', 'GitHub', 'Linux', 'Jenkins', 'Swagger', 'Dapper ORM'].map((skill) => (
+                {['Git', 'GitHub', 'Linux', 'VS Code', 'Visual Studio', 'SSMS'].map((skill) => (
                   <span key={skill} className="rounded-lg bg-gray-700 px-3 py-1 text-sm text-gray-300">
                     {skill}
                   </span>
@@ -220,9 +239,9 @@ export default function AboutPage() {
               </div>
             </div>
             <div>
-              <h3 className="mb-3 text-lg font-semibold text-white">Languages</h3>
+              <h3 className="mb-3 text-lg font-semibold text-white">Language</h3>
               <div className="flex flex-wrap gap-2">
-                {['English (fluent)', 'Malay (fluent)', 'Mandarin (intermediate)', 'Arabic (intermediate)'].map((skill) => (
+                {['English (Fluent)', 'Malay (Fluent)'].map((skill) => (
                   <span key={skill} className="rounded-lg bg-gray-700 px-3 py-1 text-sm text-gray-300">
                     {skill}
                   </span>
@@ -232,48 +251,116 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* Leadership, Volunteering and Achievements */}
+        {/* Leadership Experience */}
         <div className="mb-12 rounded-lg bg-gray-800 p-8 shadow-sm">
-          <h2 className="mb-6 text-2xl font-semibold text-white">Leadership, Volunteering and Achievements</h2>
+          <h2 className="mb-6 text-2xl font-semibold text-white">Leadership Experience</h2>
           <div className="space-y-6">
             <div>
-              <h3 className="mb-2 text-lg font-semibold text-white">Model United Nations Conference</h3>
-              <p className="mb-2 text-sm text-gray-400">Aug 2020</p>
+              <div className="mb-2 flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                <h3 className="text-lg font-semibold text-white">Event Coordinator</h3>
+                <span className="text-sm text-gray-400">October 2024 - December 2024</span>
+              </div>
+              <p className="mb-3 text-gray-300">Mini Malaysia (Lancaster University Malaysian Society), United Kingdom</p>
               <ul className="ml-6 list-disc space-y-1 text-gray-400">
-                <li>Delegate of Mexico in SOCHUM</li>
-                <li>Collaborated with global delegates to address social and humanitarian challenges as Mexico's representative</li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="mb-2 text-lg font-semibold text-white">Head of Prefect Committee</h3>
-              <p className="mb-2 text-sm text-gray-400">Jan 2017 - Nov 2019</p>
-              <ul className="ml-6 list-disc space-y-1 text-gray-400">
-                <li>Setting and enforcing rules and standards for the prefect team</li>
-                <li>Leading team meetings and delegating tasks</li>
+                <li>Coordinated and delegated team activities for an international cultural event, managing over 50 team members to showcase Malaysia's unique heritage, crafts, and traditions to a global audience.</li>
+                <li>Organized and led planning meetings, event logistics, and stakeholder communication, ensuring seamless execution of activities, exhibitions, and cultural presentations attended by hundreds of international visitors.</li>
               </ul>
             </div>
           </div>
         </div>
 
-        {/* Featured Projects Summary */}
+        {/* Volunteering Experience */}
+        <div className="mb-12 rounded-lg bg-gray-800 p-8 shadow-sm">
+          <h2 className="mb-6 text-2xl font-semibold text-white">Volunteering Experience</h2>
+          <div className="space-y-6">
+            <div>
+              <div className="mb-2 flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                <h3 className="text-lg font-semibold text-white">Student Ambassador - Interactive Peers</h3>
+                <span className="text-sm text-gray-400">February 2021 - February 2022</span>
+              </div>
+              <p className="mb-3 text-gray-300">MARA College Banting</p>
+              <ul className="ml-6 list-disc space-y-1 text-gray-400">
+                <li>Supported 200+ students with inquiries on university applications, mental health, and wellbeing, providing guidance, resources, and follow-up to ensure effective peer support.</li>
+                <li>Planned and executed 10+ workshops and speaker sessions, coordinating logistics, promotion, and scheduling to engage the student community and enhance learning and development programs.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Projects */}
         <div className="rounded-lg bg-gray-800 p-8 shadow-sm">
-          <h2 className="mb-6 text-2xl font-semibold text-white">Featured Projects</h2>
-          <div className="space-y-4">
+          <h2 className="mb-6 text-2xl font-semibold text-white">Projects</h2>
+          <div className="space-y-8">
             <div>
-              <h3 className="mb-2 text-lg font-semibold text-white">Payroll Management System (ASP.NET Core Web API + React)</h3>
-              <p className="text-gray-400">Built a fullstack payroll system using ASP.NET Core and React, implementing RESTful APIs, clean architecture, and business-rule–driven salary calculations.</p>
+              <div className="mb-3">
+                <h3 className="text-xl font-semibold text-white mb-2">Portfolio Website</h3>
+                <div className="flex flex-wrap gap-2 mb-3">
+                  {['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'JavaScript', 'HTML', 'CSS'].map((tech) => (
+                    <span key={tech} className="rounded-lg bg-gray-700 px-3 py-1 text-xs text-gray-300">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <ul className="ml-6 list-disc space-y-2 text-gray-400">
+                <li>Designed and developed a portfolio website using Next.js and React, focusing on clean UI and smooth client-side navigation.</li>
+                <li>Built UI components in React with a fast feedback loop during development, allowing quick testing and refinement of features.</li>
+                <li>Built dynamic project pages using data from local JSON files, allowing new projects to be added by editing data instead of rewriting components.</li>
+              </ul>
             </div>
+
             <div>
-              <h3 className="mb-2 text-lg font-semibold text-white">Webflow to Next.js Migration (Next.js, TypeScript)</h3>
-              <p className="text-gray-400">Migrated a static Webflow site into a production-ready Next.js App Router application, handling dynamic routing, asset normalization, and animation re-initialization.</p>
+              <div className="mb-3">
+                <h3 className="text-xl font-semibold text-white mb-2">Fynecta Landing - Webflow to Next.js Migration</h3>
+                <div className="flex flex-wrap gap-2 mb-3">
+                  {['Next.js', 'React', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'Webflow', 'Lottie Web'].map((tech) => (
+                    <span key={tech} className="rounded-lg bg-gray-700 px-3 py-1 text-xs text-gray-300">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <ul className="ml-6 list-disc space-y-2 text-gray-400">
+                <li>Migrated a production Webflow site into a modern Next.js application, preserving animations, layout structure, and multi-page navigation while improving maintainability and performance.</li>
+                <li>Refactored static HTML/CSS into reusable React components with TypeScript, improving code organization, making the codebase cleaner and easier to update as new pages and features were added.</li>
+                <li>Implemented client-side routing, asset optimization, and animation re-initialization (Lottie), ensuring smooth user experience and consistent behavior across pages and devices.</li>
+              </ul>
             </div>
+
             <div>
-              <h3 className="mb-2 text-lg font-semibold text-white">Developer Portfolio Website (Next.js, TypeScript)</h3>
-              <p className="text-gray-400">Developed a responsive portfolio website with dynamic project pages and filtering using Next.js and TypeScript.</p>
+              <div className="mb-3">
+                <h3 className="text-xl font-semibold text-white mb-2">Payroll Management System</h3>
+                <div className="flex flex-wrap gap-2 mb-3">
+                  {['C#', '.NET', 'React', 'SQL Server', 'JavaScript', 'HTML', 'CSS'].map((tech) => (
+                    <span key={tech} className="rounded-lg bg-gray-700 px-3 py-1 text-xs text-gray-300">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <ul className="ml-6 list-disc space-y-2 text-gray-400">
+                <li>Enterprise-grade payroll management system built with .NET 8, React, and SQL Server, following Clean Architecture principles for maintainable and testable code.</li>
+                <li>Handles employee CRUD, working day management, skills, and salary calculations including birthday bonuses, with full RESTful API and responsive frontend UI.</li>
+                <li>Implements Dapper for data access, unit testing with xUnit, global exception handling, and Swagger/OpenAPI documentation for backend endpoints.</li>
+              </ul>
             </div>
+
             <div>
-              <h3 className="mb-2 text-lg font-semibold text-white">Book Library Management System (PHP + MySQL)</h3>
-              <p className="text-gray-400">Developed a database-driven PHP and MySQL web application with full CRUD functionality, server-side validation, and responsive UI.</p>
+              <div className="mb-3">
+                <h3 className="text-xl font-semibold text-white mb-2">Book Library Management System</h3>
+                <div className="flex flex-wrap gap-2 mb-3">
+                  {['PHP', 'MySQL', 'HTML', 'CSS'].map((tech) => (
+                    <span key={tech} className="rounded-lg bg-gray-700 px-3 py-1 text-xs text-gray-300">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <ul className="ml-6 list-disc space-y-2 text-gray-400">
+                <li>Developed a full-stack, database-driven web application using PHP and MySQL to manage library records, implementing complete CRUD functionality for books and categories.</li>
+                <li>Designed and implemented server-side validation and input sanitization to prevent common vulnerabilities (e.g., SQL injection, duplicate records), improving data integrity and application security.</li>
+                <li>Implemented relational database design and SQL queries for common operations, improving data consistency and application performance.</li>
+              </ul>
             </div>
           </div>
           <div className="mt-6">
@@ -292,4 +379,3 @@ export default function AboutPage() {
     </main>
   );
 }
-

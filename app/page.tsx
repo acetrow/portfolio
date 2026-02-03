@@ -1,20 +1,23 @@
 export default function Home() {
   const techStack = [
-    'Next.js',
-    'React',
-    'Tailwind CSS',
-    'SQL',
-    'JavaScript',
+    'Python',
     'Java',
     'C',
-    'Python',
-    'PHP',
     'C#',
-    'HTML & CSS',
-    '.NET',
-    'ASP.NET',
+    'JavaScript',
     'TypeScript',
+    'PHP',
+    'SQL',
+    'React',
+    'Next.js',
+    'ASP.NET Core',
+    'Tailwind CSS',
+    'HTML',
+    'CSS',
+    'MySQL',
+    'MongoDB',
     'Git',
+    'GitHub',
   ];
 
   return (
@@ -27,10 +30,10 @@ export default function Home() {
             </span>
           </h1>
           <p className="mb-8 text-xl leading-8 text-gray-300">
-          An aspiring computer science graduate learning frontend and backend development, 
-          with a strong interest in building real-world applications and understanding 
-          industry best practices. I enjoy solving problems and writing clean, 
-          maintainable code.
+          Computer Science graduate with hands-on experience building full-stack web applications using React, Next.js, and ASP.NET Core. 
+          Completed a Technology Consultant internship at EY, contributing to real-world systems and end-to-end testing. Strong foundation 
+          in software development, RESTful APIs, and databases, with a keen interest in building clean, maintainable solutions and 
+          growing in a collaborative team environment.
           </p>
           <div className="mb-12">
             <h2 className="mb-6 text-2xl font-semibold text-white">
